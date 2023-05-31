@@ -1,0 +1,23 @@
+
+
+body{
+    background-color: whitesmoke;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    text-align: left;
+}
+
+.button1{
+background-color: lightcyan;
+border: none;
+color: black;
+display: inline-block;
+font-size: small;
+}
