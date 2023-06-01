@@ -1,23 +1,46 @@
 
-
 body{
     background-color: whitesmoke;
+}
+
+li{
+    list-style: none;
+    padding: 1%;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
     color: black;
     text-align: center;
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2{
     color: black;
-    text-align: left;
+    text-align: center;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .button1{
-background-color: lightcyan;
-border: none;
+background-color:whitesmoke;
+border: 1% black;
 color: black;
 display: inline-block;
-font-size: small;
+text-align: center;
+font-size: 125%;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
 }
+
+.button2{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
