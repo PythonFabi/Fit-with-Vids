@@ -1,2 +1,0 @@
-var youtube;
-var video;
