@@ -80,6 +80,6 @@ function searchVideo(gender, exerciseType, musclegroup, level) {
 
 
 
-genderButton.on("click", function {
+// genderButton.on("click", function {
 
-})
+// })
