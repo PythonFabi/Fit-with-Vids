@@ -30,16 +30,62 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.button1{
-background-color:whitesmoke;
-border: 1% black;
-color: black;
-display: inline-block;
-text-align: center;
-font-size: 125%;
-font-weight: bold;
-font-family: Arial, Helvetica, sans-serif;
+#buttonMale{
+
+    background-color:whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+#buttonFemale{
+    background-color:whitesmoke;
+    border: 1% black;
+    color: black;        
+    display: inline-block;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonFree{
+
+    background-color:whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonBody{
+
+    background-color:whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonChest{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
 
 .button2{
     background-color: whitesmoke;
