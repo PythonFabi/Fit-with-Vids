@@ -1,0 +1,169 @@
+body{
+    background-color: whitesmoke;
+}
+
+li{
+    list-style: none;
+    padding: 1%;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: black;
+    text-align: center;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonMale{
+
+    background-color:whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonFemale{
+    background-color:whitesmoke;
+    border: 1% black;
+    color: black;        
+    display: inline-block;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonFree{
+
+    background-color:whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonBody{
+
+    background-color:whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonChest{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonBiceps{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+#buttonTriceps{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+#buttonForearms{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+#buttonShoulders{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+#buttonUB{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+#buttonLB{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+#buttonAbs{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+#buttonLegs{
+    background-color: whitesmoke;
+    border: 1% black;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
