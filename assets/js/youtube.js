@@ -49,11 +49,11 @@ function exerciseTypeChoice() {
         choices.click(function (event){
 
         if(event.target.textContent === exerciseType[0]) {
-            selectedExerciseType = 'freeweights'
+            selectedExerciseType = 'freeweights';
             muscleGroupChoice();
             
         } else {
-            selectedExerciseType = 'bodyweight'
+            selectedExerciseType = 'bodyweight';
             muscleGroupChoice();
         };
          
@@ -84,13 +84,33 @@ function muscleGroupChoice() {
 
         choices.click(function (event){
 
-        if(event.target.textContent === exerciseType[0]) {
-            selectedExerciseType = 'freeweights'
-            muscleGroupChoice();
-            
-        } else {
-            selectedExerciseType = 'bodyweight'
-            muscleGroupChoice();
+        if(event.target.textContent === muscleGroups[0]) {
+            selectedMuscleGroup = 'Chest';
+            searchVideo();
+        } else if(event.target.textContent === muscleGroups[1]) {
+            selectedMuscleGroup = 'Biceps';
+            searchVideo();
+        } else if(event.target.textContent === muscleGroups[2]) {
+            selectedMuscleGroup = 'Triceps';
+            searchVideo();
+        } else if(event.target.textContent === muscleGroups[3]) {
+            selectedMuscleGroup = 'Forearms';
+            searchVideo();
+        } else if(event.target.textContent === muscleGroups[4]) {
+            selectedMuscleGroup = 'Shoulders';
+            searchVideo();
+        } else if(event.target.textContent === muscleGroups[5]) {
+            selectedMuscleGroup = 'Upper Back';
+            searchVideo();
+        } else if(event.target.textContent === muscleGroups[6]) {
+            selectedMuscleGroup = 'Lower Back';
+            searchVideo();
+        } else if(event.target.textContent === muscleGroups[7]) {
+            selectedMuscleGroup = 'Abs';
+            searchVideo();
+        } else if(event.target.textContent === muscleGroups[8]) {
+            selectedMuscleGroup = 'Legs';
+            searchVideo();
         };
          
             
