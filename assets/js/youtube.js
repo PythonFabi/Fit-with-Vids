@@ -1,5 +1,7 @@
 var choiceDescription = $('#choice-description');
 var choiceButtons = $('#choice-buttons');
+var buttonMale = $('#button-male');
+var buttonFemale = $('#button-female');
 var specifyGender = ['men','women'];
 var exerciseType = ['freeweights', 'bodyweight'];
 var muscleGroups = ['Chest', 'Biceps', 'Triceps', 'Forearms', 'Shoulders', 'Upper Back' , 'Lower Back', 'Abs', 'Legs'];
@@ -13,27 +15,74 @@ var selectedExerciseType;
 var selectedMuscleGroup;
 
 // Add eventListener for the gender buttons and save the value of the selectedGender in selectedGender based on the clicked button
+function handleClick(event) {
+    var clickedButton = event.target;
 
+    if ($(clickedButton).is(buttonMale)) {
+        selectedGender = 'male';
+        exerciseTypeChoice();
+        
+    } else if ($(clickedButton).is(buttonFemale)) {
+        selectedGender = 'female';
+        exerciseTypeChoice();
+        console.log(buttonFemale);
+    }
+    
+}
 
 // clear paragraph and buttons and create the choices for the exercisetype and save the input in selectedExerciseType
 function exerciseTypeChoice() {
     choiceDescription.html("");
     choiceButtons.html("");
-    var description = $("<p> Choose one of the following exerciseTypes: (freeweights and bodyweight) <br>" +
-    "Please look for the nearest gym for freeweights and if you don't have or want to use any equipment, then simply choose bodyweight</p>");
+    var description = $("<p> Choose one of the following exercise types: (freeweights and bodyweight) <br>" +
+    "<em>(Please look for the nearest gym for freeweights and if you don't have or want to use any equipment, then simply choose bodyweight)</em></p>");
     description.addClass('choice-descr');
     choiceDescription.append(description);
 
-    // loops through the array of firstQuestionAnswers and creates buttons with the values in the array
     for (let i = 0; i < exerciseType.length; i++) {
-        var choices = document.createElement("button");
+        var choices = $("<button></button>");
         choices.text(exerciseType[i]);
         choices.addClass('choice-btns');
 
         
 
-        // listens for click on buttons two go to the second question
-        choices.on('click', function (event){
+        choices.click(function (event){
+
+        if(event.target.textContent === exerciseType[0]) {
+            selectedExerciseType = 'freeweights'
+            muscleGroupChoice();
+            
+        } else {
+            selectedExerciseType = 'bodyweight'
+            muscleGroupChoice();
+        };
+         
+            
+        });
+        // answer buttons appended in the questionsection
+        choiceButtons.append(choices);
+    };
+
+
+};
+
+
+function muscleGroupChoice() {
+    choiceDescription.html("");
+    choiceButtons.html("");
+    var description = $("<p> Choose one of the following muscle groups: (Chest, Biceps, Triceps, Forearms, Shoulders, Upper Back , Lower Back, Abs, Legs) <br>" +
+    "<em>(It is important to train each muscle group equally, in order to have a balanced and athletic body)</em></p>");
+    description.addClass('choice-descr');
+    choiceDescription.append(description);
+
+    for (let i = 0; i < muscleGroups.length; i++) {
+        var choices = $("<button></button>");
+        choices.text(muscleGroups[i]);
+        choices.addClass('choice-btns');
+
+        
+
+        choices.click(function (event){
 
         if(event.target.textContent === exerciseType[0]) {
             selectedExerciseType = 'freeweights'
@@ -54,10 +103,12 @@ function exerciseTypeChoice() {
 };
 
 // gender: men and women
-var choices = {
-    gender: genderButton.val(),
-    exerciseType: exerciseButton.val()
+var categories = {
+    gender: selectedGender,
+    exerciseType: selectedExerciseType,
 }
+
+console.log(categories);
 
 // muscleGroups 
 
@@ -80,6 +131,5 @@ function searchVideo(gender, exerciseType, musclegroup, level) {
 
 
 
-// genderButton.on("click", function {
-
-// })
+buttonMale.click(handleClick);
+buttonFemale.click(handleClick);
