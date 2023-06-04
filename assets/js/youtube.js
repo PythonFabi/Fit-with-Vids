@@ -22,10 +22,8 @@ function handleClick(event) {
 
     if ($(clickedButton).is(buttonMale)) {
         selectedGender = 'male';
-    
     } else if ($(clickedButton).is(buttonFemale)) {
-        selectedGender = 'female';
-       
+        selectedGender = 'female'; 
     };
 
     // create an object to save the values for each clicked button
@@ -39,22 +37,24 @@ function handleClick(event) {
     exerciseTypeChoice(); 
 }
 
-// clear paragraph and buttons and create the choices for the exercisetype and save the input in selectedExerciseType
+
 function exerciseTypeChoice() {
+    // clear paragraph and buttons
     choiceDescription.html("");
     choiceButtons.html("");
+    // add description 
     var description = $("<p> Choose one of the following exercise types: (freeweights and bodyweight) <br>" +
     "<em>(Please look for the nearest gym for freeweights (involve equipment, such as dumbells, barbells etc.) and if you don't have or want to use any equipment, then simply choose bodyweight)</em></p>");
     description.addClass('choice-descr');
     choiceDescription.append(description);
 
+    // use a for loop to iterate through the array of exerciseTypes and creates buttons with the content of the array
     for (let i = 0; i < exerciseType.length; i++) {
         var choices = $("<button></button>");
         choices.text(exerciseType[i]);
         choices.addClass('choice-btns');
 
-        
-
+        // add eventlistener for the choice buttons and save the selectedExerciseButton choice based on the clicked button
         choices.click(function (event){
 
         if(event.target.textContent === exerciseType[0]) {
@@ -131,69 +131,20 @@ function muscleGroupChoice() {
 
         // only if all the buttons are clicked, you can redirect to the Vids.html and call the searchVideo function, with the selected choices as parameters
         if (categories.gender && categories.exerciseType && selectedMuscleGroup) {
-            searchVideo(categories.gender, categories.exerciseType, categories.muscleGroup);
+            redirectToVids();
         } 
         });
 
         // append the choice buttons in the choiceButtonsDiv
-        choiceButtons.append(choices);
-    };
-
-  
-
-    
+        choiceButtons.append(choices);       
+    };   
 };
 
 
-// once I clicked all the buttons I want this to be implemented in the searchqueries
-
-
-// once the queries are complete I want the video to be searched
-
-
-// level needs to be added to the parameters as well 
 // this function will redirect the page to the vids.html
 function redirectToVids() {
     window.location.href = 'vids.html';
 }
-
-// the searchVideo function uses the chosen parameters and passes those on to the URL, which will search for the right videos
-function searchVideo(gender, exerciseType, muscleGroup) {
-    var searchApiUrl = 'https://www.googleapis.com/youtube/v3/search';
-    var specificUrl = searchApiUrl + '?part=snippet&maxResults=15&q=' + gender + '%20' + exerciseType + '%20' + muscleGroup + '&key=' + youtubeApiKey;
- console.log(specificUrl);
-    // the fetch is performed on the well constructed URL and returns a JSON response
-    fetch(specificUrl)
-        .then(function (response) {
-            return response.json();
-        })
-        // once successful, the data from that response will be used to create iframe elements, which will include the videos
-        .then(function (data){
-            // console.log(data);
-            data.items.forEach(function(item) {
-                var videoId = item.id.videoId;
-                // console.log(videoId);
-                // here we iterate through the data we got and embed the videoId from the data in the iframe and add per result one more iframe
-                var videos = $('<iframe width="420" height="315" src="https://www.youtube.com/embed/' + videoId + '"></iframe>');
-                // those videos get appended in the youtubeDiv
-
-                youtubeDiv.append(videos);
-            });
-            // redirectToVids();
-
-       
-        })
-
-        // in case of an error the window will display an alert with an error message
-        .catch(function(error){
-            console.error('An unexpected error occured:', error);
-            window.alert('An unexpected error ocurred, please try again later:', error);
-        });
-};
-
-
-
-
 
 // handle the first click event on the male or female button
 buttonMale.click(handleClick);
