@@ -22,11 +22,10 @@ function handleClick(event) {
 
     if ($(clickedButton).is(buttonMale)) {
         selectedGender = 'male';
-        exerciseTypeChoice(); 
+    
     } else if ($(clickedButton).is(buttonFemale)) {
         selectedGender = 'female';
-        exerciseTypeChoice();
-        console.log(buttonFemale);
+       
     };
 
     // create an object to save the values for each clicked button
@@ -37,6 +36,7 @@ function handleClick(event) {
     };
 
     localStorage.setItem('categories', JSON.stringify(categories));
+    exerciseTypeChoice(); 
 }
 
 // clear paragraph and buttons and create the choices for the exercisetype and save the input in selectedExerciseType
@@ -131,7 +131,6 @@ function muscleGroupChoice() {
 
         // only if all the buttons are clicked, you can redirect to the Vids.html and call the searchVideo function, with the selected choices as parameters
         if (categories.gender && categories.exerciseType && selectedMuscleGroup) {
-            redirectToVids();
             searchVideo(categories.gender, categories.exerciseType, categories.muscleGroup);
         } 
         });
@@ -162,7 +161,7 @@ function redirectToVids() {
 function searchVideo(gender, exerciseType, muscleGroup) {
     var searchApiUrl = 'https://www.googleapis.com/youtube/v3/search';
     var specificUrl = searchApiUrl + '?part=snippet&maxResults=15&q=' + gender + '%20' + exerciseType + '%20' + muscleGroup + '&key=' + youtubeApiKey;
-
+ console.log(specificUrl);
     // the fetch is performed on the well constructed URL and returns a JSON response
     fetch(specificUrl)
         .then(function (response) {
@@ -170,22 +169,29 @@ function searchVideo(gender, exerciseType, muscleGroup) {
         })
         // once successful, the data from that response will be used to create iframe elements, which will include the videos
         .then(function (data){
-            console.log(data);
-            for (var i=0; i < data.length; i++) {
+            // console.log(data);
+            data.items.forEach(function(item) {
+                var videoId = item.id.videoId;
+                // console.log(videoId);
                 // here we iterate through the data we got and embed the videoId from the data in the iframe and add per result one more iframe
-                var videos = $('<iframe width="420" height="315" src="https://www.youtube.com/embed/' + data[i].id.videoId + '"></iframe>');
+                var videos = $('<iframe width="420" height="315" src="https://www.youtube.com/embed/' + videoId + '"></iframe>');
                 // those videos get appended in the youtubeDiv
+
                 youtubeDiv.append(videos);
-            }
+            });
+            // redirectToVids();
 
        
         })
 
         // in case of an error the window will display an alert with an error message
         .catch(function(error){
+            console.error('An unexpected error occured:', error);
             window.alert('An unexpected error ocurred, please try again later:', error);
         });
 };
+
+
 
 
 
