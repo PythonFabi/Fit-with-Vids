@@ -9,7 +9,7 @@ calculateButton.on('click', function(event) {
 });
 
 function calculateBmi() {
-    var heightValue = height.val();
+    var heightValue = height.val() / 100;
     var weightValue = weight.val();
     var bmiResult = weightValue/(heightValue*heightValue).toFixed(1);
     roundedBmiResult = Math.round(bmiResult * 10) / 10;
