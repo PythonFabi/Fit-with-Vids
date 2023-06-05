@@ -10,21 +10,14 @@
     <div id="video-div"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/youtube.js"></script>
+    <script src="../js/youtube.js"></script>
     <script>
 
     // get categories from the localStorage and call the searchVideo function with the categories as parameters
     var categories = JSON.parse(localStorage.getItem('categories'));
     searchVideo(categories.gender, categories.exerciseType, categories.muscleGroup);
-
-
-    
     // once I clicked all the buttons I want this to be implemented in the searchqueries
-
-
     // once the queries are complete I want the video to be searched
-
-
     // level needs to be added to the parameters as well 
     // the searchVideo function uses the chosen parameters and passes those on to the URL, which will search for the right videos
     function searchVideo(gender, exerciseType, muscleGroup) {
@@ -40,20 +33,20 @@
         })
         // once successful, the data from that response will be used to create iframe elements, which will include the videos
         .then(function (data){
-            // console.log(data);
+            console.log(data);
             data.items.forEach(function(item) {
                 var videoId = item.id.videoId;
                 // console.log(videoId);
+                var videoHeading = item.snippet.title;
+
+                var videoTitle = $('<h3>'+ videoHeading + '</h3>');
 
                 // here we iterate through the data we got and embed the videoId from the data in the iframe and add per result one more iframe
                 var videos = $('<iframe width="420" height="315" src="https://www.youtube.com/embed/' + videoId + '"></iframe>');
                 // those videos get appended in the youtubeDiv
-
+                youtubeDiv.append(videoTitle);
                 youtubeDiv.append(videos);
-            });
-          
-
-       
+            });      
         })
 
         // in case of an error the window will display an alert with an error message

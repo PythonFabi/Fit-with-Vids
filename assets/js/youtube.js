@@ -2,9 +2,9 @@ var choiceDescription = $('#choice-description');
 var choiceButtons = $('#choice-buttons');
 var buttonMale = $('#button-male');
 var buttonFemale = $('#button-female');
-var specifyGender = ['men','women'];
-var exerciseType = ['freeweights', 'bodyweight'];
-var muscleGroups = ['Chest', 'Biceps', 'Triceps', 'Forearms', 'Shoulders', 'Upper Back' , 'Lower Back', 'Abs', 'Legs'];
+var specifyGender = ['Men','Women'];
+var exerciseType = ['Freeweights', 'Bodyweight'];
+var muscleGroups = ['Chest', 'Biceps', 'Triceps', 'Forearms', 'Shoulders', 'Upper Back' , 'Lower Back', 'Abs', 'Legs', 'Glutes'];
 var genderButton = $('.gender-button');
 var exerciseButton = $('.exercise-button');
 var muscleGroupButton = $('.muscle-group-button');
@@ -118,6 +118,8 @@ function muscleGroupChoice() {
             selectedMuscleGroup = 'Abs';
         } else if(event.target.textContent === muscleGroups[8]) {
             selectedMuscleGroup = 'Legs';
+        } else if(event.target.textContent === muscleGroups[9]) {
+            selectedMuscleGroup = 'Glutes';
         };
 
         // get the categories object again from the localStorage and store the selected Muscle Group
