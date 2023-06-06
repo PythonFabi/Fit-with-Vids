@@ -10,6 +10,7 @@ var exerciseButton = $('.exercise-button');
 var muscleGroupButton = $('.muscle-group-button');
 var youtubeDiv = $('#video-div')
 var youtubeApiKey = 'AIzaSyBwiXi_lvfTht-p2D-CQRbttwkOB9yuOeM';
+var backupKey = 'AIzaSyDK9ZnNT05_3cnumLG0OK1XT7uCswkJ50Q';
 
 // those variables are defined to store the selected categories
 var selectedGender;
