@@ -44,8 +44,8 @@ function exerciseTypeChoice() {
     choiceDescription.html("");
     choiceButtons.html("");
     // add description 
-    var description = $("<p> Choose one of the following exercise types: (freeweights and bodyweight) <br>" +
-    "<em>(Please look for the nearest gym for freeweights (involve equipment, such as dumbells, barbells etc.) and if you don't have or want to use any equipment, then simply choose bodyweight)</em></p>");
+    var description = $("<h5> Choose one of the following exercise types: (freeweights and bodyweight) <br>" +
+    "<em>(Please look for the nearest gym for freeweights (involve equipment, such as dumbells, barbells etc.) and if you don't have or want to use any equipment, then simply choose bodyweight)</em></h5>");
     description.addClass('choice-descr');
     choiceDescription.append(description);
 
@@ -87,8 +87,8 @@ function exerciseTypeChoice() {
 function muscleGroupChoice() {
     choiceDescription.html("");
     choiceButtons.html("");
-    var description = $("<p> Choose one of the following muscle groups: (Chest, Biceps, Triceps, Forearms, Shoulders, Upper Back , Lower Back, Abs, Legs) <br>" +
-    "<em>(It is important to train each muscle group equally, in order to have a balanced and athletic body)</em></p>");
+    var description = $("<h5> Choose one of the following muscle groups: (Chest, Biceps, Triceps, Forearms, Shoulders, Upper Back , Lower Back, Abs, Legs) <br>" +
+    "<em>(It is important to train each muscle group equally, in order to have a balanced and athletic body)</em></h5>");
     description.addClass('choice-descr');
     choiceDescription.append(description);
 

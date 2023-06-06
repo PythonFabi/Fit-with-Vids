@@ -1,6 +1,4 @@
-.indigo.darken-4 {
-    background-color: #1a237e !important;
-}
+
 body{
     background-color: whitesmoke;
 }
@@ -37,39 +35,35 @@ div{
     font-family: 'Times New Roman', Times, serif;
 }
 #button-map{
-    background-color:#1a237e;
-    color: whitesmoke;
-    border: 1% black;
+    background-color: orange;
+    color: white;
+    border: 1% white;
     font-size: 125%;
-    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 #button-BMI{
-    background-color:#1a237e;
-    color: whitesmoke;
-    border: 1% black;
+    background-color: orange;
+    color: white;
+    border: 1% white;
     font-size: 125%;
-    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 #button-tracker{
-    background-color:#1a237e;
-    color: whitesmoke;
-    border: 1% black;
+    background-color: orange;
+    color: white;
+    border: 1% white;
     font-size: 125%;
-    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 #button-workout{
-    background-color:#1a237e;
-    color: whitesmoke;
-    border: 1% black;
+    background-color: orange;
+    color: white;
+    border: 1% white;
     font-size: 125%;
-    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 #button-male{
-    background-color:#1a237e;
+    background-color:#81d4fa;
     color: whitesmoke;
     border: 1% black;
     font-size: 125%;
@@ -77,7 +71,7 @@ div{
     font-family: 'Times New Roman', Times, serif;
 }
 #button-female{
-    background-color:#1a237e;
+    background-color:#81d4fa;
     color: whitesmoke;
     border: 1% black;
     font-size: 125%;
@@ -86,7 +80,7 @@ div{
 
 }
 .choice-btns{
-    background-color:#1a237e;
+    background-color:#81d4fa;
     color: whitesmoke;
     border: 1% black;
     display: inline;
@@ -95,16 +89,14 @@ div{
     font-family: 'Times New Roman', Times, serif;
 }
 #submit{
-    background-color:#1a237e;
-    color: whitesmoke;
-    border: 1% black;
+    background-color:#81d4fa;
+    color: black;
     display: inline;
     font-size: 125%;
-    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 #button-homepage{
-    background-color:#1a237e;
+    background-color:#81d4fa;
     color: whitesmoke;
     border: 1% black;
     font-size: 125%;
@@ -112,7 +104,7 @@ div{
     font-family: 'Times New Roman', Times, serif;
 }
 #button-back{
-    background-color:#1a237e;
+    background-color:#81d4fa;
     color: whitesmoke;
     border: 1% black;
     font-size: 125%;
