@@ -103,3 +103,19 @@ div{
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
+#button-homepage{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button-back{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
