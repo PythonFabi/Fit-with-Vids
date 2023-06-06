@@ -39,7 +39,7 @@
     function searchVideo(gender, exerciseType, muscleGroup) {
     var searchApiUrl = 'https://www.googleapis.com/youtube/v3/search';
     // constructs the url with the given search queries and parameters
-    var specificUrl = searchApiUrl + '?part=snippet&maxResults=15&q=' + gender + '%20' + exerciseType + '%20' + muscleGroup + '&key=' + youtubeApiKey;
+    var specificUrl = searchApiUrl + '?part=snippet&maxResults=15&q=' + gender + '%20' + exerciseType + '%20' + muscleGroup + '&key=' + backupKey;
     var youtubeDiv = $('#video-div');
     console.log(specificUrl);
     // the fetch is performed on the well constructed URL and returns a JSON response
