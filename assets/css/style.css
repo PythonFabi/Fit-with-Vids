@@ -36,6 +36,38 @@ div{
     font-size: 125%;
     font-family: 'Times New Roman', Times, serif;
 }
+#button-map{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button-BMI{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button-tracker{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button-workout{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
 #button-male{
     background-color:#1a237e;
     color: whitesmoke;
@@ -54,6 +86,15 @@ div{
 
 }
 .choice-btns{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    display: inline;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#submit{
     background-color:#1a237e;
     color: whitesmoke;
     border: 1% black;
