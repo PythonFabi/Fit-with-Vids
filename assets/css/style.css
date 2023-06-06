@@ -1,169 +1,121 @@
+.indigo.darken-4 {
+    background-color: #1a237e !important;
+}
 body{
     background-color: whitesmoke;
 }
-
-li{
-    list-style: none;
-    padding: 1%;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+p{
+    color: black;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
 }
-
 h1{
     color: black;
     text-align: center;
     font-size: 300%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-
 h2{
     color: black;
     text-align: center;
     font-size: 200%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-
 h3{
     color: black;
     text-align: center;
     font-size: 150%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+
 }
-
-#buttonMale{
-
-    background-color:whitesmoke;
-    border: 1% black;
+div{
     color: black;
-    display: inline-block;
+    align-items: center;
     text-align: center;
     font-size: 125%;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-#buttonFemale{
-    background-color:whitesmoke;
+#button-map{
+    background-color:#1a237e;
+    color: whitesmoke;
     border: 1% black;
-    color: black;        
-    display: inline-block;
-    text-align: center;
     font-size: 125%;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-#buttonFree{
-
-    background-color:whitesmoke;
+#button-BMI{
+    background-color:#1a237e;
+    color: whitesmoke;
     border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
     font-size: 125%;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-#buttonBody{
-
-    background-color:whitesmoke;
+#button-tracker{
+    background-color:#1a237e;
+    color: whitesmoke;
     border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
     font-size: 125%;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-#buttonChest{
-    background-color: whitesmoke;
+#button-workout{
+    background-color:#1a237e;
+    color: whitesmoke;
     border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-#buttonBiceps{
-    background-color: whitesmoke;
+#button-male{
+    background-color:#1a237e;
+    color: whitesmoke;
     border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
-    
-#buttonTriceps{
-    background-color: whitesmoke;
+#button-female{
+    background-color:#1a237e;
+    color: whitesmoke;
     border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    }
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 
-#buttonForearms{
-    background-color: whitesmoke;
-    border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-
-#buttonShoulders{
-    background-color: whitesmoke;
-    border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
 }
-    
-#buttonUB{
-    background-color: whitesmoke;
+.choice-btns{
+    background-color:#1a237e;
+    color: whitesmoke;
     border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-
-#buttonLB{
-    background-color: whitesmoke;
-    border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
-    
-#buttonAbs{
-    background-color: whitesmoke;
+#submit{
+    background-color:#1a237e;
+    color: whitesmoke;
     border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-
-#buttonLegs{
-    background-color: whitesmoke;
-    border: 1% black;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
-    
+#button-homepage{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button-back{
+    background-color:#1a237e;
+    color: whitesmoke;
+    border: 1% black;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
