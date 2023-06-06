@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./assets/css/style.css"> 
     <title>Fit with Vids</title>
 </head>
-<body>
-    
-
-
+<body onload="initMap()">
+    <div id="map" style="height: 500px;"></div>
+    <button onclick="findNearestGym()">Find Nearest Gym</button>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Ogv6wGyjmvL8KdzmEH_-q-XHggmJm8k&libraries=places"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
