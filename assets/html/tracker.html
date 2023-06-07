@@ -1,46 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Fit With Vids</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/materialize-style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Fit With Vids Tracking</title>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a>Fit With Vids</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/index.html">Homepage</a></li>
-        <li><a href="/assets/html/tracker.html">Progress</a></li>
-        <li><a href="/assets/html/bmi-calculator.html">BMI Calculator</a></li>
-        <li><a href="/assets/html/map.html">Map</a></li>
-      </ul>
+    <header>
+        <h1>Fit With Vids</h1>
+    </header>
+    <main>
+        <h2>Personal Tracker</h2>
+        <div class="chest">
+            <h3>Chest</h3>
+            <section id="tab1">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab1">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab1">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add1" onclick="addsectionchest()">Add Workout</button>
+        </div>
+        <div class="biceps">
+            <h3>Biceps</h3>
+            <section id="tab2">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab2">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab2">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add2" onclick="addsectionbicep()">Add Workout</button>
+        </div>
+        <div class="triceps">
+            <h3>Triceps</h3>
+            <section id="tab3">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab3">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab3">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add3" onclick="addsectiontricep()">Add Workout</button>
+        </div>
+        <div class="forearms">
+            <h3>Forearms</h3>
+            <section id="tab4">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab4">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab4">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add4" onclick="addsectionforearm()">Add Workout</button>
+        </div>
+        <div class="shoulders">
+            <h3>Shoulders</h3>
+            <section id="tab5">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab5">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab5">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add5" onclick="addsectionshoulder()">Add Workout</button>
+        </div>
+        <div class="upper">
+            <h3>Upper back</h3>
+            <section id="tab6">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab6">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab6">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add6" onclick="addsectionupper()">Add Workout</button>
+        </div>
+        <div class="lower">
+            <h3>Lower back</h3>
+            <section id="tab7">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab7">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab7">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add7" onclick="addsectionlower()">Add Workout</button>
+        </div>
+        <div class="abs">
+            <h3>Abs</h3>
+            <section id="tab8">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab8">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab8">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add8" onclick="addsectionabs()">Add Workout</button>
+        </div>
+        <div class="legs">
+            <h3>Legs</h3>
+            <section id="tab9">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab9">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <section id="tab9">
+                <input type="text" id="Workout" placeholder="Your Workout...">
+                <input type="number" id="reps" placeholder="Reps...">
+                <input type="number" id="sets" placeholder="Sets...">
+                <button id="comp">Compleated</button>
+            </section>
+            <button id="add9" onclick="addsectionlegs()">Add Workout</button>
+        </div>
+        <script src="assets\js\tracker.js"></script>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="/index.html">Homepage</a></li>
-        <li><a href="/assets/html/tracker.html">Progress</a></li>
-        <li><a href="/assets/html/bmi-calculator.html">BMI Calculator</a></li>
-        <li><a href="/assets/html/map.html">Map</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
- 
-      <div class="row center">
-
-
-
-
-
-
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+<!-- 
+          <h2>Body Weight</h2>
+          <h3>Start Weight: </h3>
+          <input type="text" id="srtwght" placeholder="Starting wieght...">
+          <h3>Current Weight: </h3>
+          <input type="text" id="crntwght" placeholder="Current wieght...">
+          <p id="wghtloss"></p> -->
+          <!-- <h2>Progression%</h2> -->
+          <!-- <span id="ProBar">wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</span> -->
+    </main>
 </body>
 </html>
