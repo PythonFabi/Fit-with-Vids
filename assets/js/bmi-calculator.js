@@ -24,3 +24,16 @@ function displayBmi() {
 }
 
 $(document).ready(displayBmi);
+
+(function($){
+    $(function(){
+  
+      $('.nav-button').sideNav({
+        edge: 'left', 
+        closeOnClick: true, 
+        draggable: true
+      }
+      );
+  
+    }); 
+  })(jQuery);

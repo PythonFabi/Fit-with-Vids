@@ -120,6 +120,19 @@ for (let index = 0; index < adchst; index++) {
     addsectionchest()
 };
 
+(function($){
+    $(function(){
+  
+      $('.nav-button').sideNav({
+        edge: 'left', 
+        closeOnClick: true, 
+        draggable: true
+      }
+      );
+  
+    }); 
+  })(jQuery);
+
 // var weightcrn = document.getElementById("crntwght");
 // var weightsrt = document.getElementById("srtwght");
 // var loss = document.getElementById("wghtloss");

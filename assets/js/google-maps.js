@@ -65,3 +65,16 @@ function findNearestGym() {
     alert('Error: Your browser doesn\'t support geolocation.');
   }
 }
+
+(function($){
+  $(function(){
+
+    $('.nav-button').sideNav({
+      edge: 'left', 
+      closeOnClick: true, 
+      draggable: true
+    }
+    );
+
+  }); 
+})(jQuery);
