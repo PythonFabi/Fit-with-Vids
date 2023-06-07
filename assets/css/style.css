@@ -34,6 +34,13 @@ div{
     font-size: 125%;
     font-family: 'Times New Roman', Times, serif;
 }
+#button-workout{
+    background-color: orange;
+    color: white;
+    border: 1% white;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
 #button-map{
     background-color: orange;
     color: white;
@@ -53,13 +60,6 @@ div{
     color: white;
     border: 1% white;
     font-size: 70%;
-    font-family: 'Times New Roman', Times, serif;
-}
-#button-workout{
-    background-color: orange;
-    color: white;
-    border: 1% white;
-    font-size: 100%;
     font-family: 'Times New Roman', Times, serif;
 }
 #button-male{
