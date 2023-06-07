@@ -152,3 +152,11 @@ function redirectToVids() {
 // handle the first click event on the male or female button
 buttonMale.click(handleClick);
 buttonFemale.click(handleClick);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, {
+        alignment: 'center'
+    });
+  });
