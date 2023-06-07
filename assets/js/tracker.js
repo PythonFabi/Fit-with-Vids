@@ -120,12 +120,18 @@ for (let index = 0; index < adchst; index++) {
     addsectionchest()
 };
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, {
-        alignment: 'center'
-    });
-  });
+(function($){
+    $(function(){
+  
+      $('.nav-button').sideNav({
+        edge: 'left', 
+        closeOnClick: true, 
+        draggable: true
+      }
+      );
+  
+    }); 
+  })(jQuery);
 
 // var weightcrn = document.getElementById("crntwght");
 // var weightsrt = document.getElementById("srtwght");

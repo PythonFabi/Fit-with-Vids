@@ -154,9 +154,15 @@ buttonMale.click(handleClick);
 buttonFemale.click(handleClick);
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, {
-        alignment: 'center'
-    });
-  });
+(function($){
+    $(function(){
+  
+      $('.nav-button').sideNav({
+        edge: 'left', 
+        closeOnClick: true, 
+        draggable: true
+      }
+      );
+  
+    }); 
+  })(jQuery);
