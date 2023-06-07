@@ -16,7 +16,7 @@
     <div class="nav-wrapper container"><img src="../images/workout.png" class="logo">
       <ul class="right hide-on-med-and-down">
         <li><a href="../../index.html">Homepage</a></li>
-        <li><a href="/assets/html/tracker.html">Progress</a></li>
+        <li><a href="/assets/html/categories.html">Workout</a></li>
         <li><a href="../html/bmi-calculator.html">BMI Calculator</a></li>
         <li><a href="../html/map.html">Map</a></li>
       </ul>
@@ -24,7 +24,7 @@
       <ul id="nav-mobile" class="sidenav">
         <img src="../images/workout.png" class="logo">
         <li><a href="../../index.html">Homepage</a></li>
-        <li><a href="/assets/html/tracker.html">Progress</a></li>
+        <li><a href="/assets/html/categories.html">Workout</a></li>
         <li><a href="../html/bmi-calculator.html">BMI Calculator</a></li>
         <li><a href="../html/map.html">Map</a></li>
       </ul>
@@ -67,7 +67,7 @@
     function searchVideo(gender, exerciseType, muscleGroup) {
     var searchApiUrl = 'https://www.googleapis.com/youtube/v3/search';
     // constructs the url with the given search queries and parameters
-    var specificUrl = searchApiUrl + '?part=snippet&maxResults=15&q=' + gender + '%20' + exerciseType + '%20' + muscleGroup + '&key=' + backupKey;
+    var specificUrl = searchApiUrl + '?part=snippet&maxResults=15&q=' + gender + '%20' + exerciseType + '%20' + muscleGroup + '&key=' + youtubeApiKey;
     var youtubeDiv = $('#video-div');
     console.log(specificUrl);
     // the fetch is performed on the well constructed URL and returns a JSON response
