@@ -51,8 +51,24 @@
         </div>
     </main>
 
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../js/bmi-calculator.js"></script>
+
+    
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+
+      var navMobile = document.getElementById('nav-mobile');
+      var navInstance = M.Sidenav.getInstance(navMobile);
+      var navTrigger = document.querySelector('.sidenav-trigger');
+      navTrigger.addEventListener('click', function() {
+        navInstance.open();
+      });
+    });
+
+  </script>
 </body>
 </html>
