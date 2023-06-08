@@ -45,7 +45,23 @@
     
   
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Ogv6wGyjmvL8KdzmEH_-q-XHggmJm8k&libraries=places"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script src="../js/google-maps.js"></script>
+
+    
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+
+      var navMobile = document.getElementById('nav-mobile');
+      var navInstance = M.Sidenav.getInstance(navMobile);
+      var navTrigger = document.querySelector('.sidenav-trigger');
+      navTrigger.addEventListener('click', function() {
+        navInstance.open();
+      });
+    });
+
+  </script>
 </body>
 </html>
