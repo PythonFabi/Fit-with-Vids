@@ -152,17 +152,3 @@ function redirectToVids() {
 // handle the first click event on the male or female button
 buttonMale.click(handleClick);
 buttonFemale.click(handleClick);
-
-
-(function($){
-    $(function(){
-  
-      $('.nav-button').sideNav({
-        edge: 'left', 
-        closeOnClick: true, 
-        draggable: true
-      }
-      );
-  
-    }); 
-  })(jQuery);
